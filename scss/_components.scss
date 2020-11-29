@@ -1,0 +1,84 @@
+.site-logo{
+    height: 3rem;
+    transition:.5s;
+    &:hover{
+        transform:rotate(1turn);
+    }
+}
+
+.header-title{
+    font-size:2rem;
+    color:white;
+    animation: soldanGelenYazi 1s;
+}
+
+.header-subtitle{
+    font-size:1.5rem;
+    color:white;
+    margin-top:1rem;
+    margin-bottom:2rem;
+    animation:sagdanGelenYazi 1s;
+}
+
+.btn{
+    text-decoration:none;
+    color:white;
+    background-color: $main-color;
+    border-radius: 10000px;
+    padding:.25rem 1rem;
+    outline:none;
+    border:none;
+    &:hover{
+        color:white;
+        background-color: $main-color-light;
+    }
+    animation:ortayaCik 1s ease-out;
+   
+}
+
+.icon-asagi{
+    position: absolute;
+    width:2.5rem;
+    bottom:1rem;
+    animation:ortayaCik2 1s alternate infinite;
+}
+
+
+.egitim-card{
+    text-align: center;
+    padding:1rem;
+    margin: .5rem 1rem;
+    border:1px solid $main-font-color;
+    border-radius: .5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center;
+    transition:.5s ease-in-out;
+    flex:1;
+    &:hover{
+        transform:scale(1.1);
+    }
+
+    &--java{
+        background-image: linear-gradient(
+            to right bottom,
+            rgba(white,0.5),
+            rgba(white,0.9)),
+            url('/img/java.jpg');
+       
+    }
+    &--nodejs{
+        background-image: linear-gradient(
+            to right bottom,
+            rgba(white,0.5),
+            rgba(white,0.9)),
+            url('/img/nodejs.jpg'); 
+    }
+    &--flutter{
+        background-image: linear-gradient(
+            to right bottom,
+            rgba(white,0.5),
+            rgba(white,0.9)),
+            url('/img/flutter.jpg');
+    }
+}
